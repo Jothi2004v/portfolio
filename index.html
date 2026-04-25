@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jothi Prakash | Portfolio</title>
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- css -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <!-- header section design -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Jothi Prakash </h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>Frontend Developer skilled in building responsive and user-friendly web applications using modern technologies.
+                        Passionate content creator who shares engaging reels and YouTube videos focused on creativity and tech</p>
+            <div class="social-media">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jothiprakash12asm21@gmail.com" target="_blank"><i class="bx bxl-gmail"></i></a>                
+                <a href="https://github.com/Jothi2004v" target="_blank"><i class="bx bxl-github"></i></a>
+                <a href="https://www.instagram.com/jothiprakash_venugopal?igsh=cWpwNnN5ZnZxeWdu" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+                <a href="https://www.linkedin.com/in/jothiprakash-v-6a551332a" target="_blank"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <a href="CV.pdf"  download="Jothi_Prakaash_CV.pdf" class="btn">Download CV</a>
+        </div>
+        
+        <div class="home-img">
+            <img src="home.png" alt="Image not found">
+        </div>
+    </section>
+
+    <!-- about section design -->
+     <section class="about" id="about">
+        <div class="about-img">
+            <img src="about.png" alt="">
+        </div>
+        
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend Developer!</h3>
+             <p id="aboutText" class="text clamped">
+                     I am a BCA student at Vellore Institute of Technology with a strong interest in web development and modern technologies. I specialize in frontend development, creating responsive and user-friendly websites using HTML, CSS, JavaScript, PHP, and MySQL. I have built several projects, including web applications, management systems, and machine learning–based prediction tools. I am passionate about learning new technologies and continuously improving my skills to solve real-world problems. Along with development, I create engaging content as a reel creator and YouTuber. I am a self-motivated and quick learner, aiming to grow as a skilled developer and contribute to impactful projects.</p>
+             <a href="#" class="btn" onclick="toggleText(event)">Read More</a>
+        </div>
+     </section>
+
+    <!-- services section design  -->
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class="bx bx-code-alt"></i>
+                <h3>Frontend Development</h3>
+                <p>Frontend development focuses on designing and building the visual part of websites that users interact with.It uses technologies like HTML, CSS, and JavaScript to create responsive and user-friendly interfaces.</p>
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div>
+
+            <div class="services-box">
+                <i class="bx bx-bar-chart-alt"></i>
+                <h3>Machine Learning</h3>
+                <p>Machine learning is a field of artificial intelligence that enables systems to learn from data and make predictions. It is widely used in applications like recommendation systems, healthcare prediction, and data analysis.</p>
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div>
+
+            <div class="services-box">
+                <i class="bx bx-code-alt"></i>
+                <h3>Full Stack Development</h3>
+                <p>Full Stack involves building both the user interface and server-side logic of applications. It combines technologies like HTML, CSS, JavaScript with backend tools such as PHP, databases, or APIs to create complete systems.</p>
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div>
+        </div>
+    </section> 
+
+    <!-- Portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">My <span>Projects</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="portfolio1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Online Examination System</h4>
+                    <p>A web-based platform for user registration, exam participation, and instant result evaluation.</p>
+                    <a href="http://onlineexamregistration.kesug.com/" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+               <div class="portfolio-box">
+                <img src="portfolio2 .jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Guessing Number System</h4>
+                    <p>An interactive application where users guess a randomly generated number with feedback hints. </p>
+                    <a href="https://guessnumber10.streamlit.app/" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+               <div class="portfolio-box">
+                <img src="portfolio3.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Blood Bank Management</h4>
+                    <p>A system to manage donor details, blood availability, and request handling efficiently.</p>
+                    <a href="https://blood-bank.ct.ws/login.php" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+               <div class="portfolio-box">
+                <img src="portfolio4.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Neonatal Mortality Forecasting</h4>
+                    <p>A machine learning model to predict neonatal mortality risk based on healthcare data.</p>
+                    <a href="https://neonatal.streamlit.app/" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+               <div class="portfolio-box">
+                <img src="portfolio5.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Heart Disease Prediction</h4>
+                    <p>An ML-based system that predicts the likelihood of heart disease using patient health parameters.</p>
+                    <a href="https://predict-heart-disease-app.streamlit.app/" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+               <div class="portfolio-box">
+                <img src="portfolio6.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, </p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact  <span>Me!</span></h2>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <!-- pass key -->
+            <input type="hidden" name="access_key" value="31c0cb6d-aaf6-4bb5-9460-eacf050a4d2f">
+
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <input type="tel" name="phone" placeholder="Mobile Number" required>
+                <input type="text"  name="subject" placeholder="Subject" required>
+            </div>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- footer design -->
+     <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2026 by jp | All rights Reserved</p>
+        </div>   
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+     </footer>
+
+    <!-- scroll reveal  -->
+     <script src="https://unpkg.com/scrollreveal"></script>
+
+     <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- java script -->
+     <script  src="script.js"></script>
+
+</body>
+</html>
