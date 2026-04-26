@@ -26,6 +26,7 @@ html{
 body{
     background:  var(--bg-color);
     color: var(--text-color);
+    overflow-x: hidden;
 }
 
 section{
@@ -390,6 +391,7 @@ span{
 @media (max-width: 1200px) {
     html{
         font-size: 55%;
+        
     }   
 }
 
@@ -444,6 +446,7 @@ span{
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
+        transition: .3s;
     }
 
     .home{
@@ -467,7 +470,7 @@ span{
         flex-direction: column-reverse;
     }
 
-    .about img{
+    .about-img img{
         width: 75vw;
         margin-top: 4rem;
     }
