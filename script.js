@@ -18,12 +18,11 @@ window.onscroll = () => {
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
 
-        if(top >= offset && top < offset + height){
-            navlinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-            });
-        };
+      if (top >= offset && top < offset + height) {
+            navlinks.forEach(link => link.classList.remove('active')); 
+            let activeLink = document.querySelector('header nav a[href*=' + id + ']');
+            if (activeLink) activeLink.classList.add('active'); 
+        }
     });
     // sticky navbar
     let header = document.querySelector('header');
@@ -49,28 +48,33 @@ ScrollReveal().reveal('.home-content  p, .about-content',{ origin: 'right' })
 
 // typed js
 const typed = new Typed('.multiple-text', {
-    strings: ['Frontend Developer', 'Content Creater', 'Youtuber'],
+    strings: ['Frontend Developer', 'Content Creator', 'Youtuber'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
     loop: true
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const text = document.getElementById('aboutText');
+    if (text) text.classList.add('clamped');
+});
 
 function toggleText(e) {
     e.preventDefault();
-    const text = document.getElementById("aboutText");
+    const text = document.getElementById('aboutText');
+    if (!text) return; // Fix 3: null guard
+
     const btn = e.target;
-    if (text.classList.contains("expanded")) {
-        text.classList.remove("expanded");
-        btn.innerText = "Read More";
+    if (text.classList.contains('expanded')) {
+        text.classList.remove('expanded');
+        btn.innerText = 'Read More';
         setTimeout(() => {
-            text.classList.add("clamped");
-        }, 600); 
-    }
-    else {
-        text.classList.remove("clamped");
-        text.classList.add("expanded");
-        btn.innerText = "Read Less";
+            text.classList.add('clamped');
+        }, 600);
+    } else {
+        text.classList.remove('clamped');
+        text.classList.add('expanded');
+        btn.innerText = 'Read Less';
     }
 }
